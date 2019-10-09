@@ -1,0 +1,171 @@
+/* GENERAL */
+
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.title {
+    margin-top: 2.5em;
+    text-align: center;
+}
+
+/* HEADER */
+
+header {
+    width: 100%;
+}
+
+.navigation {
+    margin-top: 2em;
+    margin-left: 40%;
+    width: 20%;
+    border: 1px black solid;
+    padding: 0.5em 0;
+}
+
+.navigation:after{
+    clear: both;
+    content: "";
+    display: block;
+}
+
+.navigation_ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navigation_ul:after{
+    clear: both;
+    content: "";
+    display: block;
+}
+
+.navigation_li {
+    text-align: center;
+    width: 33.3333%;
+    float: left;
+}
+
+.navigation_a {
+    color: black;
+    width: 100%;
+    text-decoration: none;
+}
+.active {
+    color: grey;
+}
+
+#header_logo {
+    position: absolute;
+    top: 1em;
+    left: 1em;
+    box-sizing: border-box;
+    width: 10%;
+}
+
+#header_logo img {
+    display: block;
+    width: 100%;
+}
+
+/* FOOTER */
+
+footer {
+    position: fixed;
+    bottom: 3em;
+    width: 12.5%;
+    margin-left: 43.75%;
+}
+
+footer:after{
+    clear: both;
+    content: "";
+    display: block;
+}
+
+footer a {
+    box-sizing: border-box;
+    width: 15%;
+    margin: 0 5%;
+    float: left;
+    height: 100%;
+}
+
+footer a img {
+    width: 100%;
+    vertical-align: bottom;
+}
+
+/* ARTISTS */
+
+.title_artists {
+    margin-bottom: 1em;
+}
+
+.artists_content {
+    
+    width: 40%;
+    margin-left: 30%;
+
+}
+
+.artists_content:after{
+    clear: both;
+    content: "";
+    display: block;
+}
+
+.artist {
+    text-align: center;
+    float: left;
+    width: 25%;
+    margin-right: 12.5%;
+    margin-bottom: 1.5em;
+}
+
+.artist:nth-of-type(3n+3) {
+    margin-right: 0;
+}
+
+.artist img {
+    width: 100%;
+}
+
+.artist_name {
+
+}
+/* CONTACT */
+
+.title_contact {
+    margin-bottom: 2.5em;
+}
+
+.contact_content {
+    
+    text-align: center;
+    width: 40%;
+    margin-left: 30%;
+}
+
+.mail_group {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 2.5em;
+}
+
+.mail_group li {
+    margin-bottom: 0.5em;
+    font-weight: bold;
+}
+
+.mail_address {
+    color: lightslategrey;
+}
+
+.mail_info {
+    font-style: oblique;
+}
