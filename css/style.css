@@ -4,6 +4,9 @@ body {
     font-family: sans-serif;
     margin: 0;
     padding: 0;
+    background-image: "";
+    background-size: cover;
+    background-position: center;
 }
 
 .title {
@@ -126,6 +129,10 @@ footer a img {
     margin-bottom: 1.5em;
 }
 
+.artist:hover {
+    cursor: pointer;
+}
+
 .artist:nth-of-type(3n+3) {
     margin-right: 0;
 }
@@ -137,6 +144,96 @@ footer a img {
 .artist_name {
 
 }
+
+/* MODALS */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+
+.modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 45%; /* Could be more or less, depending on screen size */
+}
+
+.modal_bottom {
+    margin-top: 6em;
+}
+
+.modal_bottom:after{
+    clear: both;
+    content: "";
+    display: block;
+}
+
+.close {
+    color: #aaa;
+    /* float: right; */
+    position: absolute;
+    right: 1em;
+    top: 1em;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+
+.modal-content:after{
+    clear: both;
+    content: "";
+    display: block;
+}
+.modal_links {
+    float: right;
+    width: 30%;
+    padding: 0%;
+    list-style: none;
+  }
+
+.modal_links:after{
+    clear: both;
+    content: "";
+    display: block;
+}
+
+.modal_links li {
+      width: 25%;
+      float: left;
+      margin-right: 12.5%;
+}
+
+.modal_links li:nth-of-type(3n+3) {
+    margin-right: 0;
+}
+
+  .modal_links img {
+      width: 100%;
+  }
+
+  .modal_artist {
+    float: left;
+    width: 70%;
+    margin-right: 0;
+  }
+
 /* CONTACT */
 
 .title_contact {
