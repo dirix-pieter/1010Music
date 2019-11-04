@@ -1,6 +1,12 @@
 let mvnsi = document.getElementById("modal_mvnsi");
 let farflow = document.getElementById("modal_farflow");
 let c1p = document.getElementById("modal_c1p");
+
+let tevin = document.getElementById("modal_tevin");
+let jojo = document.getElementById("modal_jojo");
+let don_lario = document.getElementById("modal_don_lario");
+let kapeta = document.getElementById("modal_kapeta");
+
 let locksy = document.getElementById("modal_locksy");
 let modus = document.getElementById("modal_modus");
 let buumi = document.getElementById("modal_buumi");
@@ -11,14 +17,6 @@ let modals = document.getElementsByClassName("modal");
 let span = document.getElementsByClassName("close")[0];
 
 
-
-function kek() {
-    body.style.backgroundImage = "url(../res/img/artists/xd.png)";
-}
-
-function kekOut() {
-    body.style.backgroundImage = "";
-}
 
 window.onclick = function (event) {
     for (let index = 0; index < modals.length; index++) {
@@ -42,8 +40,20 @@ function close_modal(clicked_id) {
             farflow.style.display = "none";
             break;
 
-        case "close_c1p":
-            c1p.style.display = "none";
+        case "close_don_lario":
+            don_lario.style.display = "none";
+            break;
+
+        case "close_jojo":
+            jojo.style.display = "none";
+            break;
+
+        case "close_tevin":
+            tevin.style.display = "none";
+            break;
+
+        case "close_kapeta":
+            kapeta.style.display = "none";
             break;
 
         case "close_locksy":
@@ -65,7 +75,7 @@ function close_modal(clicked_id) {
 }
 
 function open_modal(clicked_id) {
-    
+
     switch (clicked_id) {
         case "mvnsi":
             mvnsi.style.display = "block";
@@ -75,8 +85,20 @@ function open_modal(clicked_id) {
             farflow.style.display = "block";
             break;
 
-        case "c1p":
-            c1p.style.display = "block";
+        case "kapeta":
+            kapeta.style.display = "block";
+            break;
+
+        case "jojo":
+            jojo.style.display = "block";
+            break;
+
+        case "don_lario":
+            don_lario.style.display = "block";
+            break;
+
+        case "tevin":
+            tevin.style.display = "block";
             break;
 
         case "locksy":
