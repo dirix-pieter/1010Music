@@ -15,9 +15,12 @@
     <div class="artists_content">
         <div id="row1">
 
+
+
             <div class="artist" id="buumi" onClick="open_modal(this.id)"><img src="./res/img/artists/BUUMI_KLEUR.png"
                     alt="">
                 <!-- <p class="artist_name">BUUMI</p> -->
+
             </div>
 
             <div class="artist" id="tevin" onClick="open_modal(this.id)"><img src="./res/img/artists/TEVIN_MK_KLEUR.png"
@@ -72,26 +75,67 @@
 
     <a id="header_logo" href="../index.html"><img src="./res/img/logo_trans.png" alt="1010Music logo"></a>
 
+    <div class="contact_button">
+            <a class="contact" onclick="openContact()" href="#">contact</a>
+
+    </div>
     
-    <a class="contact" href="./pages/contact.html">contact</a>
-    
+    <div class="contact_container">
+        <div class="contact_content">
+            <span class="close" id="close_contact" onClick="closeContact()">&times;</span>
+            <h1 class="title title_contact">CONTACT</h1>
+
+            <ul class="mail_group">
+                    
+                <li><span class="mail_info">Bookings</span><span class="mail_address">bookings<span
+                            class="music">@1010music.be</span> </span></li>
+                <li><span class="mail_info">Music Submissions</span> <span class="mail_address">music<span
+                            class="music">@1010music.be</span> </span></li>
+                <li><span class="mail_info">General</span> <span class="mail_address">info<span
+                            class="music">@1010music.be</span> </span></li>
+            </ul>
+
+            <h3 id="team">TEAM</h3>
+
+            <ul class="mail_group">
+                <li><span class="mail_info">Managing Director & Artist Manager</span><span class="mail_address">raf<span
+                            class="music">@1010music.be</span> </span></li>
+                <li><span class="mail_info">Bookings & Promotion Manager</span><span class="mail_address">kess<span
+                            class="music">@1010music.be</span> </span></li>
+                <li><span class="mail_info">Creative Director</span><span class="mail_address">ben<span
+                            class="music">@1010music.be</span> </span></li>
+                <li><span class="mail_info">Social Media Manager</span><span class="mail_address">wolf<span
+                            class="music">@1010music.be</span> </span></li>
+            </ul>
+
+
+
+        </div>
+    </div>
 
     <div id="modal_mvnsi" class="modal">
 
         <!-- Modal content -->
         <div class="modal-content">
+            <div class="modal_img_container">
+                <img class="modal_img" id="mvnsi_full" src="./res/img/modal/MVNSI.png" alt="">
+                <p class="modal_artist">MVNSI</p>
+            </div>
+
             <span class="close" id="close_mvnsi" onClick="close_modal(this.id)">&times;</span>
+
             <div class="modal_bottom">
 
 
-                <p class="modal_artist">MVNSI</p>
+
                 <ul class="modal_links">
-                    <li><a href="https://www.facebook.com/MVNSI/"><img src="./res/img/icons/facebook.png" alt=""></a>
+                    <li><a href="https://www.facebook.com/MVNSI/" target="_blank"><img
+                                src="./res/img/icons/facebook_trans.png" alt=""></a>
                     </li>
-                    <li><a href="https://www.instagram.com/mvnsi_243/"><img src="./res/img/icons/instagram.png"
-                                alt=""></a></li>
-                    <li><a href="https://open.spotify.com/artist/4notoIbTZFtq16MruaW6Au?si=L1NmCzgmSeKyj-HLhUSoKA"><img
-                                src="./res/img/icons/spotify.png" alt=""></a></li>
+                    <li><a href="https://www.instagram.com/mvnsi_243/" target="_blank"><img
+                                src="./res/img/icons/insta_trans.png" alt=""></a></li>
+                    <li><a href="https://open.spotify.com/artist/4notoIbTZFtq16MruaW6Au?si=L1NmCzgmSeKyj-HLhUSoKA"
+                            target="_blank"><img src="./res/img/icons/spotify_trans.png" alt=""></a></li>
                 </ul>
             </div>
         </div>
@@ -102,19 +146,25 @@
 
         <!-- Modal content -->
         <div class="modal-content">
+            <div class="modal_img_container">
+                <img class="modal_img" id="farflow_full" src="./res/img/modal/FARFLOW.png" alt="">
+                <p class="modal_artist">FARFLOW</p>
+            </div>
+
+
             <span class="close" id="close_farflow" onClick="close_modal(this.id)">&times;</span>
             <div class="modal_bottom">
 
 
-                <p class="modal_artist">FARFLOW</p>
+
                 <ul class="modal_links">
-                    <li><a href="https://www.facebook.com/FarFlowMusic/"><img src="./res/img/icons/facebook.png"
-                                alt=""></a>
+                    <li><a href="https://www.facebook.com/FarFlowMusic/" target="_blank"><img
+                                src="./res/img/icons/facebook_trans.png" alt=""></a>
                     </li>
-                    <li><a href="https://www.instagram.com/farflowmusic/"><img src="./res/img/icons/instagram.png"
-                                alt=""></a></li>
-                    <li><a href="https://open.spotify.com/artist/37t3fh4XGd2po1twGtnHor?si=XCQN8J3CTia6vjmnHAllkw"><img
-                                src="./res/img/icons/spotify.png" alt=""></a></li>
+                    <li><a href="https://www.instagram.com/farflowmusic/" target="_blank"><img
+                                src="./res/img/icons/insta_trans.png" alt=""></a></li>
+                    <li><a href="https://open.spotify.com/artist/37t3fh4XGd2po1twGtnHor?si=XCQN8J3CTia6vjmnHAllkw"
+                            target="_blank"><img src="./res/img/icons/spotify_trans.png" alt=""></a></li>
                 </ul>
             </div>
         </div>
@@ -125,19 +175,25 @@
 
         <!-- Modal content -->
         <div class="modal-content">
+            <div class="modal_img_container">
+                <img class="modal_img" id="tevin_full" src="./res/img/modal/3C1P.png" alt="">
+                <p class="modal_artist">ZOFILO | 3C1P</p>
+
+            </div>
+
             <span class="close" id="close_tevin" onClick="close_modal(this.id)">&times;</span>
             <div class="modal_bottom">
 
 
-                <p class="modal_artist">TEVIN</p>
+
                 <ul class="modal_links">
-                    <li><a href="https://www.facebook.com/3c1pofficial/"><img src="./res/img/icons/facebook.png"
-                                alt=""></a>
+                    <li><a href="https://www.facebook.com/3c1pofficial/" target="_blank"><img
+                                src="./res/img/icons/facebook_trans.png" alt=""></a>
                     </li>
-                    <li><a href="https://www.instagram.com/3c1pofficial/"><img src="./res/img/icons/instagram.png"
-                                alt=""></a></li>
-                    <li><a href="https://open.spotify.com/artist/34nwWONYSfSYZGakZxS06r?si=SUYbxoFcQja3HQZWAw88Zw"><img
-                                src="./res/img/icons/spotify.png" alt=""></a></li>
+                    <li><a href="https://www.instagram.com/3c1pofficial/" target="_blank"><img
+                                src="./res/img/icons/insta_trans.png" alt=""></a></li>
+                    <li><a href="https://open.spotify.com/artist/34nwWONYSfSYZGakZxS06r?si=SUYbxoFcQja3HQZWAw88Zw"
+                            target="_blank"><img src="./res/img/icons/spotify_trans.png" alt=""></a></li>
                 </ul>
             </div>
         </div>
@@ -148,19 +204,27 @@
 
         <!-- Modal content -->
         <div class="modal-content">
+            <div class="modal_img_container">
+                <img class="modal_img" id="jojo_full" src="./res/img/modal/3C1P.png" alt="">
+                <p class="modal_artist">JOJO | 3C1P</p>
+
+            </div>
+
+
+
             <span class="close" id="close_jojo" onClick="close_modal(this.id)">&times;</span>
             <div class="modal_bottom">
 
 
-                <p class="modal_artist">JOJO</p>
+
                 <ul class="modal_links">
-                    <li><a href="https://www.facebook.com/3c1pofficial/"><img src="./res/img/icons/facebook.png"
-                                alt=""></a>
+                    <li><a href="https://www.facebook.com/3c1pofficial/" target="_blank"><img
+                                src="./res/img/icons/facebook_trans.png" alt=""></a>
                     </li>
-                    <li><a href="https://www.instagram.com/3c1pofficial/"><img src="./res/img/icons/instagram.png"
-                                alt=""></a></li>
-                    <li><a href="https://open.spotify.com/artist/34nwWONYSfSYZGakZxS06r?si=SUYbxoFcQja3HQZWAw88Zw"><img
-                                src="./res/img/icons/spotify.png" alt=""></a></li>
+                    <li><a href="https://www.instagram.com/3c1pofficial/" target="_blank"><img
+                                src="./res/img/icons/insta_trans.png" alt=""></a></li>
+                    <li><a href="https://open.spotify.com/artist/34nwWONYSfSYZGakZxS06r?si=SUYbxoFcQja3HQZWAw88Zw"
+                            target="_blank"><img src="./res/img/icons/spotify_trans.png" alt=""></a></li>
                 </ul>
             </div>
         </div>
@@ -171,19 +235,25 @@
 
         <!-- Modal content -->
         <div class="modal-content">
+            <div class="modal_img_container">
+                <img class="modal_img" id="don_lario_full" src="./res/img/modal/3C1P.png" alt="">
+                <p class="modal_artist">DON LARIO | 3C1P</p>
+            </div>
+
+
             <span class="close" id="close_don_lario" onClick="close_modal(this.id)">&times;</span>
             <div class="modal_bottom">
 
 
-                <p class="modal_artist">DON LARIO</p>
+
                 <ul class="modal_links">
-                    <li><a href="https://www.facebook.com/3c1pofficial/"><img src="./res/img/icons/facebook.png"
-                                alt=""></a>
+                    <li><a href="https://www.facebook.com/3c1pofficial/" target="_blank"><img
+                                src="./res/img/icons/facebook_trans.png" alt=""></a>
                     </li>
-                    <li><a href="https://www.instagram.com/3c1pofficial/"><img src="./res/img/icons/instagram.png"
-                                alt=""></a></li>
-                    <li><a href="https://open.spotify.com/artist/34nwWONYSfSYZGakZxS06r?si=SUYbxoFcQja3HQZWAw88Zw"><img
-                                src="./res/img/icons/spotify.png" alt=""></a></li>
+                    <li><a href="https://www.instagram.com/3c1pofficial/" target="_blank"><img
+                                src="./res/img/icons/insta_trans.png" alt=""></a></li>
+                    <li><a href="https://open.spotify.com/artist/34nwWONYSfSYZGakZxS06r?si=SUYbxoFcQja3HQZWAw88Zw"
+                            target="_blank"><img src="./res/img/icons/spotify_trans.png" alt=""></a></li>
                 </ul>
             </div>
         </div>
@@ -194,22 +264,29 @@
 
         <!-- Modal content -->
         <div class="modal-content">
-            <span class="close" id="close_kapeta" onClick="close_modal(this.id)">&times;</span>
+            <div class="modal_img_container">
+                <img class="modal_img" id="kapeta_full" src="./res/img/modal/3C1P.png" alt="">
+                <p class="modal_artist">KAPETA | 3C1P</p>
+            </div>
+            <span class="close" id="close_don_lario" onClick="close_modal(this.id)">&times;</span>
+
             <div class="modal_bottom">
 
-
-                <p class="modal_artist">KAPETA</p>
                 <ul class="modal_links">
-                    <li><a href="https://www.facebook.com/3c1pofficial/"><img src="./res/img/icons/facebook.png"
-                                alt=""></a>
+                    <li><a href="https://www.facebook.com/3c1pofficial/" target="_blank"><img
+                                src="./res/img/icons/facebook_trans.png" alt=""></a>
                     </li>
-                    <li><a href="https://www.instagram.com/3c1pofficial/"><img src="./res/img/icons/instagram.png"
-                                alt=""></a></li>
-                    <li><a href="https://open.spotify.com/artist/34nwWONYSfSYZGakZxS06r?si=SUYbxoFcQja3HQZWAw88Zw"><img
-                                src="./res/img/icons/spotify.png" alt=""></a></li>
+                    <li><a href="https://www.instagram.com/3c1pofficial/" target="_blank"><img
+                                src="./res/img/icons/insta_trans.png" alt=""></a></li>
+                    <li><a href="https://open.spotify.com/artist/34nwWONYSfSYZGakZxS06r?si=SUYbxoFcQja3HQZWAw88Zw"
+                            target="_blank"><img src="./res/img/icons/spotify_trans.png" alt=""></a></li>
                 </ul>
             </div>
         </div>
+
+        <!-- <span class="close" id="close_kapeta" onClick="close_modal(this.id)">&times;</span> -->
+
+    </div>
 
     </div>
 
@@ -218,22 +295,28 @@
 
         <!-- Modal content -->
         <div class="modal-content">
-            <span class="close" id="close_locksy" onClick="close_modal(this.id)">&times;</span>
+            <div class="modal_img_container">
+                <img class="modal_img" id="locksy_full" src="./res/img/modal/LOCKSY.png" alt="">
+                <p class="modal_artist">LOCKSY FUNKX</p>
+            </div>
+            <span class="close" id="close_don_lario" onClick="close_modal(this.id)">&times;</span>
+
             <div class="modal_bottom">
 
-
-                <p class="modal_artist">LOCKSY FUNKX</p>
                 <ul class="modal_links">
-                    <li><a href="https://www.facebook.com/L.Johnson.AZ"><img src="./res/img/icons/facebook.png"
-                                alt=""></a>
+                    <li><a href="https://www.facebook.com/locksyfunkx/" target="_blank"><img
+                                src="./res/img/icons/facebook_trans.png" alt=""></a>
                     </li>
-                    <li><a href="https://www.instagram.com/locksyfunkx/"><img src="./res/img/icons/instagram.png"
-                                alt=""></a></li>
-                    <li><a href="https://open.spotify.com/user/1113504969?si=IdLl_c_QRhyYETLkJJR38A"><img
-                                src="./res/img/icons/spotify.png" alt=""></a></li>
+                    <li><a href="https://www.instagram.com/locksyfunkx/" target="_blank"><img
+                                src="./res/img/icons/insta_trans.png" alt=""></a></li>
+                    <li><a href="https://open.spotify.com/artist/4jhoWstjF0vKpLkaQR6WdM?si=3G0hNjyZTwSFwaHapHMIow"
+                            target="_blank"><img src="./res/img/icons/spotify_trans.png" alt=""></a></li>
                 </ul>
             </div>
         </div>
+        <!-- <span class="close" id="close_locksy" onClick="close_modal(this.id)">&times;</span> -->
+
+    </div>
 
     </div>
 
@@ -241,19 +324,21 @@
 
         <!-- Modal content -->
         <div class="modal-content">
+            <div class="modal_img_container">
+                <img class="modal_img" id="modus_full" src="./res/img/modal/MO.png" alt="">
+                <p class="modal_artist">MODUS OPERANDI</p>
+            </div>
             <span class="close" id="close_modus" onClick="close_modal(this.id)">&times;</span>
             <div class="modal_bottom">
 
-
-                <p class="modal_artist">MODUS OPERANDI</p>
                 <ul class="modal_links">
-                    <li><a href="https://www.facebook.com/modusoperandidjs/"><img src="./res/img/icons/facebook.png"
-                                alt=""></a>
+                    <li><a href="https://www.facebook.com/modusoperandidjs/" target="_blank"><img
+                                src="./res/img/icons/facebook_trans.png" alt=""></a>
                     </li>
-                    <li><a href="https://www.instagram.com/modus.operandi.official/"><img
-                                src="./res/img/icons/instagram.png" alt=""></a></li>
-                    <li><a href="https://open.spotify.com/artist/1UnNtQRRLdNJZOn731A4u6?si=k4Ad401VQTaZEeYpvrs4Rg"><img
-                                src="./res/img/icons/spotify.png" alt=""></a></li>
+                    <li><a href="https://www.instagram.com/modus.operandi.official/" target="_blank"><img
+                                src="./res/img/icons/insta_trans.png" alt=""></a></li>
+                    <li><a href="https://open.spotify.com/artist/1UnNtQRRLdNJZOn731A4u6?si=k4Ad401VQTaZEeYpvrs4Rg"
+                            target="_blank"><img src="./res/img/icons/spotify_trans.png" alt=""></a></li>
                 </ul>
             </div>
         </div>
@@ -263,34 +348,36 @@
     <div id="modal_buumi" class="modal">
 
         <!-- Modal content -->
-        <div class="modal-content">
+        <div id="modal_buumi_content" class="modal-content">
+            <div class="modal_img_container">
+                <img class="modal_img" id="buumi_full" src="./res/img/modal/BUUMI.png" alt="">
+                <p class="modal_artist">BUUMI</p>
+            </div>
             <span class="close" id="close_buumi" onClick="close_modal(this.id)">&times;</span>
             <div class="modal_bottom">
 
-
-                <p class="modal_artist">BUUMI</p>
                 <ul class="modal_links">
-                    <li><a href="https://www.facebook.com/BuumiOfficial/"><img src="./res/img/icons/facebook.png"
-                                alt=""></a>
+                    <li><a href="https://www.facebook.com/BuumiOfficial/" target="_blank"><img
+                                src="./res/img/icons/facebook_trans.png" alt=""></a>
                     </li>
-                    <li><a href="https://www.instagram.com/bencyran/"><img src="./res/img/icons/instagram.png"
-                                alt=""></a></li>
-                    <li><a href="https://open.spotify.com/user/1186913271?si=vhWlR8LzS5yzyg3gal9b1g"><img
-                                src="./res/img/icons/spotify.png" alt=""></a></li>
+                    <li><a href="https://www.instagram.com/bencyran/" target="_blank"><img
+                                src="./res/img/icons/insta_trans.png" alt=""></a></li>
+                    <li><a href="https://open.spotify.com/user/1186913271?si=vhWlR8LzS5yzyg3gal9b1g"
+                            target="_blank"><img src="./res/img/icons/spotify_trans.png" alt=""></a></li>
                 </ul>
             </div>
         </div>
 
     </div>
     <footer>
-        <a href="https://www.facebook.com/the1010collective/"><img src="./res/img/icons/facebook_trans.png"
-                alt="facebook"></a>
-        <a href="https://www.instagram.com/the1010collective/"><img src="./res/img/icons/insta_trans.png"
-                alt="instagram"></a>
-        <a id="youtube" href="https://www.youtube.com/channel/UCVBCuh5uc9m9PBn_0WIbt_Q"><img
+        <a href="https://www.facebook.com/the1010collective/" target="_blank"><img
+                src="./res/img/icons/facebook_trans.png" alt="facebook"></a>
+        <a href="https://www.instagram.com/the1010collective/" target="_blank"><img
+                src="./res/img/icons/insta_trans.png" alt="instagram"></a>
+        <a id="youtube" href="https://www.youtube.com/channel/UCVBCuh5uc9m9PBn_0WIbt_Q" target="_blank"><img
                 src="./res/img/icons/youtube_trans.png" alt="youtube"></a>
-        <a href="https://open.spotify.com/playlist/4NCPeQkCAw3Y98W7oWLLss?si=F7Gw53CDSQCyGPYj4bvVKg"><img
-                src="./res/img/icons/spotify_trans.png" alt="spotify"></a>
+        <a href="https://open.spotify.com/playlist/4NCPeQkCAw3Y98W7oWLLss?si=F7Gw53CDSQCyGPYj4bvVKg"
+            target="_blank"><img src="./res/img/icons/spotify_trans.png" alt="spotify"></a>
     </footer>
 </body>
 

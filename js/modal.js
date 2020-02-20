@@ -1,6 +1,12 @@
+let artists_content = document.getElementsByClassName("artists_content")[0];
+let contact = document.getElementsByClassName("contact")[0];
+let logo = document.getElementById("header_logo");
+let footer = document.getElementsByTagName("footer")[0];
+
 let mvnsi = document.getElementById("modal_mvnsi");
 let farflow = document.getElementById("modal_farflow");
 let c1p = document.getElementById("modal_c1p");
+
 
 let tevin = document.getElementById("modal_tevin");
 let jojo = document.getElementById("modal_jojo");
@@ -11,14 +17,38 @@ let locksy = document.getElementById("modal_locksy");
 let modus = document.getElementById("modal_modus");
 let buumi = document.getElementById("modal_buumi");
 
+let contact_container = document.getElementsByClassName("contact_container")[0];
+let contact_content = document.getElementsByClassName("contact_content")[0];
+
 let body = document.getElementsByTagName("body")[0];
 let modals = document.getElementsByClassName("modal");
 
 let span = document.getElementsByClassName("close")[0];
 
+let links_buumi = document.getElementById("links_buumi");
 
+function blurBackground() {
+    artists_content.style.display = "none";
+    artists_content.style.filter = "blur(4px)";
+    contact.style.display= "none";
+    contact.style.filter = "blur(2px)";
+    footer.style.filter = "blur(2px)";
+    logo.style.filter = "blur(2px)";
+
+}
+
+function unBlurBackground() {
+    artists_content.style.display = "block";
+    artists_content.style.filter = "blur(0)";
+    contact.style.filter = "blur(0)";
+    contact.style.display= "inline-block";
+    footer.style.filter = "blur(0)";
+    logo.style.filter = "blur(0)";
+
+}
 
 window.onclick = function (event) {
+    console.log(event.target);
     for (let index = 0; index < modals.length; index++) {
         const element = modals[index];
         if (event.target == element) {
@@ -27,10 +57,25 @@ window.onclick = function (event) {
             close_modal(id);
         }
     }
+    if(event.target == contact_container) {
+        closeContact();
+    }
+    
+}
+
+function closeContact() {
+    unBlurBackground();
+    contact_container.style.display = "none";
+}
+
+function openContact() {
+    blurBackground();
+    contact_container.style.display = "block";
+
 }
 
 function close_modal(clicked_id) {
-
+    unBlurBackground();
     switch (clicked_id) {
         case "close_mvnsi":
             mvnsi.style.display = "none";
@@ -76,6 +121,8 @@ function close_modal(clicked_id) {
 
 function open_modal(clicked_id) {
 
+
+    blurBackground();
     switch (clicked_id) {
         case "mvnsi":
             mvnsi.style.display = "block";
@@ -116,5 +163,23 @@ function open_modal(clicked_id) {
         default:
             break;
     }
+
+    
+    
+    for (let index = 0; index < modals.length; index++) {
+        const element = modals[index];
+        
+        var style = window.getComputedStyle(element);
+        if(!(style.display === 'none')){
+            let imgContainer = element.getElementsByClassName("modal_img_container")[0];
+            let links = element.getElementsByClassName("modal_bottom")[0];
+            
+            links.style.height = imgContainer.offsetWidth + 'px';
+
+            console.log(element.childNodes[3].childNodes);
+        }
+        
+    }
+    
 
 }
