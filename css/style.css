@@ -354,46 +354,55 @@ footer a img {
     }
 
     .contact_container .contact_content {
-        margin-top: 7.5%;
-        width: 75%;
-        margin-left: 12.5%;
+        border: none;
+        margin-top: 20%;
+        width: 90%;
+        margin-left: 5%;
         box-sizing: border-box;
-        padding: 1em;
+        padding: 0;
         margin-bottom: 7.5%;
+        
     }
 
     .contact_content .close {
-        right: -1em;
-        top: -1em;
+        right: 0em;
+        top: -2em;
     }
 
     .contact_content .mail_group {
-        font-size: .8em;
+        
         margin-bottom: 1em;
+        margin-left: 0;
     }
 
     .contact_content .title_contact {
         font-size: 1.5em;
         margin-bottom: 1em;
+        text-align: center;
     }
 
     .contact_content #team {
         margin-bottom: 1em;
+        text-align: center;
+    }
+
+    .mail_group .mail_address, .mail_group .mail_info { 
+        font-size: .7em;
+        width: 47.5%;
+        display: block;
+        float: left;
+        text-align: left;
     }
 
 
     .mail_group .mail_address {
-        width: 100%;
-        display: inline-block;
-        float: none;
-        text-align: right;
-        margin-top: 0.5em;
-        margin-bottom: 1em;
+        margin-left: 2.5%;
+        
     }
 
     .mail_group .mail_info {
-        width: 100%;
-        display: inline-block;
+        margin-right: 2.5%;
+        text-align: right;
 
     }
 
@@ -403,7 +412,11 @@ footer a img {
         display: block;
     }
 
-    .mail_group li {}
+    .mail_group li:after {
+        clear: both;
+        content: "";
+        display: block;
+    }
 }
 
 
