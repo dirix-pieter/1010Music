@@ -633,7 +633,7 @@ footer a img {
 
 }
 
-@media only screen and (max-width: 1300px) {
+@media only screen and (max-width: 1300px){
 
     footer {
         font-size: .75em;
@@ -645,3 +645,4 @@ footer a img {
     }
 
 }
+

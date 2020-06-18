@@ -190,9 +190,11 @@ function close_modal(clicked_id) {
         case "close_buumi":
             buumi.style.display = "none";
             break;
+
         case "close_boshra":
             boshra.style.display = "none";
             break;
+
         default:
             break;
     }
@@ -243,6 +245,7 @@ function open_modal(clicked_id) {
         case "boshra":
             boshra.style.display = "block";
             break;
+
         default:
             break;
     }
@@ -262,7 +265,7 @@ function open_modal(clicked_id) {
             }
             
 
-            console.log(element.childNodes[3].childNodes);
+            
         }
 
     }
